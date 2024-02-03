@@ -91,7 +91,7 @@ header {
 
 h1 {
   font-family: Tan-Spring;
-  font-size: 8vw;
+  font-size: 4vw;
   color: rgba(0,0,0,1.0);
   margin: 0;
 }
@@ -116,6 +116,10 @@ h1 {
   line-height: 0.9;
 }
 
+.section-title {
+  text-decoration: underline;
+}
+
 h2 {
   font-size: 2.5vw;
   margin-bottom: 3ex;;
@@ -135,6 +139,28 @@ main {
 
 .section-title {
   color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#vacant-img-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  user-select: none;
+}
+
+.quote {
+  margin-bottom: 0;
+}
+
+.quote-ref {
+  margin-top: 0;
 }
 
 #footer-wrapper {
