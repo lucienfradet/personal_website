@@ -1,6 +1,6 @@
 @font-face {
   font-family: Tan-Spring;
-  src: url('data/fonts/TAN-SPRING.otf') format('opentype');
+  src: url('../data/fonts/TAN-SPRING.otf') format('opentype');
 }
 
 body {

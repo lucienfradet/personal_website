@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     for (let i = 0; i < numberOfImages; i++) {
       const img = $("<img>");
-      (i === 0) ? img.attr("src", "data/images/vacant_examples/vacant.png") : img.attr("src", `../../data/images/vacant_examples/vacant(${i + 1}).png`)
+      (i === 0) ? img.attr("src", "data/images/vacant_examples/vacant.png") : img.attr("src", `data/images/vacant_examples/vacant(${i + 1}).png`)
       img.attr("alt", "Random Image");
       img.css("width", getRandomSize() + "px");
       img.css("grid-area", getRandomPosition());
