@@ -1,6 +1,6 @@
 @font-face {
   font-family: Tan-Spring;
-  src: url('../../data/fonts/TAN-SPRING.otf') format('opentype');
+  src: url('data/fonts/TAN-SPRING.otf') format('opentype');
 }
 
 body {
@@ -41,7 +41,7 @@ header {
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0)
     ),
-    url("../../data/images/noise.svg");
+    url("data/images/noise.svg");
   filter: contrast(145%) brightness(1000%);
 }
 
