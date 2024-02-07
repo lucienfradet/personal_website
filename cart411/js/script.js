@@ -38,4 +38,14 @@ $(document).ready(function() {
     vacantImageGrid.empty();
     randomizeVacantImages();
   }); 
+
+  document.querySelectorAll('a.scroll-to').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+});
 });
