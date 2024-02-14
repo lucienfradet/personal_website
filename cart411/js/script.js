@@ -2,6 +2,8 @@ $(document).ready(function() {
   // setup image grid
   const vacantImageGrid = $("#vacant-img-grid");
 
+  $('body').css('min-height', $('.fg-wrapper').outerHeight() + 'px');
+
   function randomizeVacantImages() {
     // Define the number of images you want
     const numberOfImages = 5;

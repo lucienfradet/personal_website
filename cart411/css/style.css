@@ -145,7 +145,6 @@ main {
 .side-to-side {
   width: 50%; /* Each div takes up 50% of the container's width */
   padding: 20px;
-  border: 1px solid #ccc;
   box-sizing: border-box;
 }
 
@@ -228,6 +227,8 @@ a.scroll-to {
 
 .bg-wrapper {
   position: absolute;
+  width: 100%;
+  height: 100vh;
   z-index: -1;
 }
 
