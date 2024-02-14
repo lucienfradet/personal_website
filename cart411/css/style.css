@@ -138,6 +138,17 @@ main {
   padding: 20px;
 }
 
+.side-to-side-container {
+  display: flex;
+}
+
+.side-to-side {
+  width: 50%; /* Each div takes up 50% of the container's width */
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
 .section-title {
   color: #333;
 }
