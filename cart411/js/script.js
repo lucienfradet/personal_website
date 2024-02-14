@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   function randomizeVacantImages() {
     // Define the number of images you want
-    const numberOfImages = 5;
+    const numberOfImages = 7;
 
     for (let i = 0; i < numberOfImages; i++) {
       const img = $("<img>");
