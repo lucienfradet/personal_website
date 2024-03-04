@@ -1,4 +1,45 @@
 $(document).ready(function() {
+  // Function to check screen size
+  let mobileFlag = false;
+  function checkScreenSize() {
+    var windowWidth = $(window).width();
+    if (windowWidth <= 991) {
+      mobileFlag = true;
+      // If window width is smaller than or equal to 991
+      $(".navbar-icon").show();
+      $(".navbar-desktop-menu").hide();
+    } else {
+      mobileFlag = false;
+      // If window width is greater than 991
+      $(".navbar-icon").hide();
+      $(".navbar-desktop-menu").show();
+    }
+  }
+
+  // Initial check on page load
+  checkScreenSize();
+
+  // Check on window resize
+  $(window).resize(checkScreenSize);
+
+  // Function to handle scroll event
+  $(window).scroll(function() {
+    // Get the current scroll position
+    var scrollPosition = $(this).scrollTop();
+
+    if (!mobileFlag) {
+      // Check if the scroll position is greater than 20 pixels
+      if (scrollPosition > 30) {
+        // If true, transition navbar to the left
+        $(".navbar").css("transform", "translateY(-100%)");
+      } else {
+        // If false, reset navbar position
+        $(".navbar").css("transform", "translateY(0)");
+      }
+    }
+  });
+
+  // navbar mobile
   const navbarIconUrl = '../data/icons/navbar_icon.svg';
   const navbarIconCloseUrl = '../data/icons/navbar_icon_close.svg';
 
