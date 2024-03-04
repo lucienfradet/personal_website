@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Gooper-LightItalic;
+  src: url('../data/fonts/Gooper-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Gooper-BoldItalic;
+  src: url('../data/fonts/Gooper-DarkItalic.ttf') format('truetype');
+}
+
+body {
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 1vw;
+  line-height: 1;
+}
+
+.navbar {
+  z-index: 100;
+  /* width: 100%; */
+  margin: 0 auto;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  padding: 2.5em 3em 2.4em;
+  display: flex; /* Added for title and icon layout */
+  justify-content: space-between; /* Added for title and icon layout */
+  align-items: center; /* Added for title and icon layout */
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    font-size: 1.25vw;
+  }
+} 
+
+@media screen and (max-width: 479px) {
+  .navbar {
+    padding: 4em;
+  }
+  .navbar > .navbar-title {
+    font-size: 3.5em;
+  }
+  .navbar > .navbar-content {
+    padding-top: 16em;
+    padding-bottom: 7em;
+  }
+}
+
+.navbar-title {
+  font-family: Gooper-LightItalic;
+  font-size: 1.5vw; /* Adjust font size */
+}
+
+.navbar-icon {
+  /* Adjust icon size and styling as needed */
+  z-index: 50;
+  width: 20px;
+  height: 20px;
+  fill: currentColor; /* Inherit navbar text color */
+  opacity: 1; /* Initially hidden */
+  /* transition: opacity 0.3s ease-in-out; /* Smooth transition */ 
+}
+
+.navbar-icon svg {
+  opacity: 1; /* Initially hidden */
+  /* animation: fadeInOut 0.6s ease-in-out; /* Apply animation */
+}
+
+.navbar-icon.active { /* Icon after click */
+  animation: fadeInOut 0.6s ease-in-out; /* Apply animation */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1; /* Start with full opacity */
+  }
+  50% {
+    opacity: 0; /* Fade out at the middle of the animation */
+  }
+  100% {
+    opacity: 1; /* Fade back in to full opacity */
+  }
+}
+
+.navbar-content {
+  position: fixed;
+  will-change: transform;
+  display: none; /* Initially hidden */
+  transform: translate3d(0px, -100%, 0px); /* Initially translated off-screen */
+  transform-style: preserve-3d; /* Preserve 3D context */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  text-align: center;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  z-index: 1;
+}
+
+.navbar.active .navbar-content.active {
+  display: block; /* Show the content on activation */
+  transform: translate3d(0px, 0px, 0px); /* Slide down to visible position */
+}
