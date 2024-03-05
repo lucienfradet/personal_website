@@ -12,13 +12,15 @@ body {
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
   font-size: 1vw;
   line-height: 1;
-  height: 1000px;
-  background: beige;
+  height: 2000px;
+  background: whitesmoke;
+  /* margin: 100px; */
 }
 
 .navbar {
   z-index: 100;
   /* width: 100%; */
+  background: whitesmoke;
   margin: 0 auto;
   font-size: 1.25vw;
   position: fixed;
@@ -33,46 +35,6 @@ body {
   transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
-@media screen and (max-width: 991px) {
-  .navbar > .navbar {
-    padding: 4em;
-  }
-  .navbar > .navbar-title {
-    font-size: 3em;
-  }
-  .navbar > .navbar-content {
-    padding-top: 10em;
-    padding-bottom: 4em;
-  }
-  .navbar-content > .button-default {
-    border-width: 1px;
-    margin: .2em .5em;
-    padding: .2em 1em .3em;
-    font-size: 3vw;
-  }
-  .navbar-content > .social-container.mobile {
-    margin-top: 1em;
-  } 
-}
-
-@media screen and (max-width: 479px) {
-  .navbar > .navbar {
-    padding: 4em;
-  }
-  .navbar > .navbar-title {
-    font-size: 5em;
-  }
-  .navbar > .navbar-content {
-    padding-top: 16em;
-    padding-bottom: 7em;
-  }
-  .navbar-content > .button-default {
-    border-width: 1px;
-    margin: 0.2em 2em;
-    padding: .2em 1em .3em;
-    font-size: 9vw;
-  }
-}
 
 .navbar-title {
   font-family: Gooper-LightItalic;
@@ -145,6 +107,7 @@ body {
   left: 0%;
   right: 0%;
   z-index: 1;
+  background: whitesmoke;
 }
 
 .navbar-content.active {
@@ -203,4 +166,416 @@ body {
   font-family: Gooper-LightItalic;
   font-size: 1.2em;
   margin-left: 3em;
+  transition: transform 0.1s ease-in-out; /* Smooth transition */
+  cursor: pointer;
+}
+
+.navbar-desktop-menu:hover {
+  transform: skewX(18deg); /* Skew on hover */
+}
+
+.intro-section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 18em;
+  padding-bottom: 8em;
+}
+
+.intro-text-container {
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+.title-container {
+  margin-bottom: 8em;
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+h1 {
+  margin-bottom: .25em;
+  font-family: Athletics,sans-serif;
+  font-size: 2.8em;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: Gooper-BoldItalic;
+  font-size: 2.8em;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.work-selection {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 8em;
+  padding-left: 6em;
+  padding-right: 6em;
+  display: block;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.content-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.content-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.content-center {
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+}
+
+#agent-mtl-project {
+  width: 45em;
+}
+
+#map-gazer-project {
+  width: 60em;
+  overflow: hidden;
+}
+
+#video-work-project {
+  width: 65em;
+}
+
+#web-app-project {
+  width: 65em;
+}
+
+#js-game-project {
+  width: 30em;
+}
+
+#graphic-design-project {
+  width: 80em;
+}
+
+#blender-project .image {
+  width: 100%;
+  height: calc(100% - 1%);
+}
+
+.content-wrapper {
+  align-self: flex-end;
+}
+
+.media-container {
+  position: relative;
+  align-content: center;
+  width: 45em;
+  align-self: flex-end;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  transition: opacity 1s ease-in-out;
+}
+
+.other-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content-text {
+  position: relative;
+  display: flex; /* Added for title and icon layout */
+  justify-content: flex-start; /* Added for title and icon layout */
+  /* display: block; */ 
+}
+
+.content-text-block {
+  margin-top: 0.5em;
+  margin-right: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+.text-centered {
+  margin-top: 1em;
+  text-align: center;
+}
+
+#button-view-all-work {
+  margin-bottom: 2em;
+  font-size: 7em;
+  transition: transform 0.3s ease;
+}
+
+#button-view-all-work:hover {
+  animation: rotateAnimation 0.5s ease-in-out forwards; /* Apply animation on hover */
+}
+
+#button-view-all-work:not(:hover) {
+  transform: rotate(0deg);
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg); /* Start with no rotation */
+  }
+  50% {
+    transform: rotate(-5deg); /* Rotate clockwise by 10 degrees */
+  }
+  100% {
+    transform: rotate(10deg); /* Rotate clockwise by 10 degrees */
+  }
+}
+
+.buttom-social {
+  display: flex;
+  justify-content: center;
+}
+
+.buttom-social img {
+  width: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#copyright-text {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+footer {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-end; /* Push footer content to the bottom */
+}
+
+.pill-container {
+  position: absolute;
+  top: 0.1em;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  transform: rotate(-180deg); /* Skew on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+.pill {
+  color: black;
+  width: 20px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s, height 0.3s, margin-left 1s, margin-right 1s, border-radius 0.3s, transform 0.3s, background-color 0.6s ease-in-out; /* Smooth transition for width and padding */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+#pill-left {
+  background-color: darkblue;
+  border-radius: 20px 0 0 20px; /* Adjust border-radius to shape the pill */
+}
+
+#pill-right {
+  background-color: darkred;
+  border-radius: 0 20px 20px 0; /* Adjust border-radius to shape the pill */
+}
+
+.pill-text {
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.3s, font-size 0.3s; /* Smooth transition for opacity */
+  position: absolute;
+  bottom: 0; /* Adjust as needed */
+  text-align: center;
+  width: 100%; /* Centered item spans the width of the container */
+  z-index: -1;
+  bottom: 50%; /* Adjust as needed */
+  font-family: Gooper-BoldItalic;
+  color: black;
+  transform: translateY(40%);
+}
+
+
+.content-wrapper:hover .pill-container {
+  transform: rotate(-18deg); /* Skew on hover */
+}
+
+.content-wrapper:hover .pill {
+  width: 75px;
+  height: 50px;
+}
+.content-wrapper:hover #pill-left {
+  background-color: #007bff;
+  margin-right: 60px;
+  border-radius: 40px 0 0 40px; /* Adjust border-radius to shape the pill */
+}
+.content-wrapper:hover #pill-right {
+  background-color: red;
+  margin-left: 60px;
+  border-radius: 0 40px 40px 0; /* Adjust border-radius to shape the pill */
+}
+
+.content-wrapper:hover .pill-text {
+  opacity: 1; /* Show text on hover */
+  font-size: 30pt;
+  /* transform: rotate(13deg); */
+}
+
+@media screen and (max-width: 991px) {
+  .navbar > .navbar {
+    padding: 4em;
+  }
+  .navbar > .navbar-title {
+    font-size: 3em;
+  }
+  .navbar > .navbar-content {
+    padding-top: 10em;
+    padding-bottom: 4em;
+  }
+  .navbar-content > .button-default {
+    border-width: 1px;
+    margin: .2em .5em;
+    padding: .2em 1em .3em;
+    font-size: 3vw;
+  }
+  .navbar-content > .social-container.mobile {
+    margin-top: 1em;
+  } 
+  #copyright-text > span {
+    font-size: 2em;
+  }
+  .text-centered > .footer {
+    margin-top: 2em;
+  }
+
+  .pill {
+    width: 10px;
+    height: 5px;
+  }
+
+  #pill-left {
+    border-radius: 10px 0 0 10px; /* Adjust border-radius to shape the pill */
+  }
+
+  #pill-right {
+    border-radius: 0 10px 10px 0; /* Adjust border-radius to shape the pill */
+  }
+  .content-wrapper:hover .pill {
+    width: 35px;
+    height: 25px;
+  }
+  .content-wrapper:hover #pill-left {
+    margin-right: 40px;
+    border-radius: 40px 0 0 40px; /* Adjust border-radius to shape the pill */
+  }
+  .content-wrapper:hover #pill-right {
+    margin-left: 40px;
+    border-radius: 0 40px 40px 0; /* Adjust border-radius to shape the pill */
+  }
+
+  .content-wrapper:hover .pill-text {
+    font-size: 20pt;
+    /* transform: rotate(13deg); */
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar > .navbar {
+    padding: 4em;
+  }
+  .navbar > .navbar-title {
+    font-size: 5em;
+  }
+  .navbar > .navbar-content {
+    padding-top: 16em;
+    padding-bottom: 7em;
+  }
+  .navbar-content > .button-default {
+    border-width: 1px;
+    margin: 0.2em 2em;
+    padding: .2em 1em .3em;
+    font-size: 9vw;
+  }
+  #copyright-text > span {
+    font-size: 3em;
+  }
+  .media-container {
+    width: auto;
+  }
+
+  .content {
+    margin-top: 4em;
+  }
+
+  .intro-text-container {
+    padding: 0 1em 0 1em;
+  }
+
+  .work-selection {
+    padding: 0 3em 0 3em;
+  }
+
+  .content-text {
+    font-size: 2em;
+  }
+
+  .intro-section {
+    padding-bottom: 2em;
+  }
+}
+
+/* scroll bar */
+/* Hide the default scrollbar */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+/* Define custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Add rounded corners to the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar thumb on hover */
 }
