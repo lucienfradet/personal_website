@@ -22,6 +22,35 @@
   text-align: justify;
 }
 
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.small-side-by-side {
+  display: inline-block;
+  width: 33%;
+}
+
+.medium-side-by-side {
+  display: inline-block;
+  width: 50%;
+  margin: 0 1em;
+}
+
+#album-cover {
+  width: 50em;
+  padding: 1em;
+}
+
+.image-big {
+  width: 80em;
+}
+.image-medium {
+  padding: 5em;
+  width: 45em;
+}
+
 @media screen and (max-width: 479px) {
   .project-text h2 {
     font-size: 3em;

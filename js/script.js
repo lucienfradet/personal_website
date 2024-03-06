@@ -213,4 +213,18 @@ $(document).ready(function() {
   // Event listener to toggle pill container on window resize
   $(window).resize(toggleMobileDisplay);
 
+  $(document).ready(function() {
+    $("#button-view-all-work-wrapper").mouseenter(function() {
+      $("#button-view-all-work").css("transform", "rotate(-5deg)");
+      setTimeout(function() {
+        $("#button-view-all-work").css("transform", "rotate(10deg)");
+      }, 250); // Delay for 50% of the animation duration
+    });
+  });
+
+  // Mouse leave event handler for #button-view-all-work-wrapper
+  $("#button-view-all-work-wrapper").mouseleave(function() {
+    // Apply transform: rotate(0deg); to #button-view-all-work
+    $("#button-view-all-work").css("transform", "rotate(0deg)");
+  });
 })

@@ -356,19 +356,19 @@ h2 {
 }
 
 #button-view-all-work {
-  margin-bottom: 2em;
   font-size: 6em;
-  transition: transform 0.3s ease;
-}
-
-#button-view-all-work:hover {
-  animation: rotateAnimation 0.5s ease-in-out forwards; /* Apply animation on hover */
-}
-
-#button-view-all-work:not(:hover) {
+  transition: transform 0.3s ease-in-out;
   transform: rotate(0deg);
 }
 
+/* #button-view-all-work-wrapper:hover #button-view-all-work { */
+/*   animation: rotateAnimation 0.5s ease-in-out forwards;  */
+/* } */
+/**/
+/* #button-view-all-work-wrapper:not(:hover) #button-view-all-work { */
+/*   transform: rotate(0deg);  */
+/* } */
+/**/
 @keyframes rotateAnimation {
   0% {
     transform: rotate(0deg); /* Start with no rotation */
@@ -379,6 +379,12 @@ h2 {
   100% {
     transform: rotate(10deg); /* Rotate clockwise by 10 degrees */
   }
+
+}
+
+#button-view-all-work-wrapper:hover .button-default {
+  color: white;
+  background: black;
 }
 
 .buttom-social {
@@ -405,6 +411,10 @@ footer {
   align-items: center;
   justify-content: flex-end;
   /* min-height: calc(100vh - 160em); */
+}
+
+.footer-wrapper {
+  margin-top: 10em;
 }
 
 .pill-container {
