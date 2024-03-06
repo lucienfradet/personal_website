@@ -1,0 +1,29 @@
+.project-container {
+  padding: 12em 2em 2em 2em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.project-text h2 {
+  margin-bottom: .25em;
+  font-family: Athletics,sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.project-text-inner {
+  display: inline-block;
+  padding: 0 5em 5em 0;
+  width: 40%; 
+  vertical-align: top;  
+  text-align: justify;
+}
+
+@media screen and (max-width: 479px) {
+  .project-text h2 {
+    font-size: 3em;
+  }
+}

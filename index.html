@@ -4,34 +4,45 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <!-- libraries -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- pre-loading assets -->
-    <link rel="preload" as="video" href="./data/videos/sim_mtl_2.mp4" type="video/mp4">
-    <link rel="preload" as="video" href="./data/videos/folioscope_digitale.mp4" type="video/mp4">
 
   </head>
   <body>
     <div class="navbar">
-      <div class="navbar-title">Lucien Cusson-Fradet</div>
+      <a class="silent-link" href="./index.html">
+        <div class="navbar-title">Lucien Cusson-Fradet</div>
+      </a>
       <div class="navbar-icon">
         <svg></svg>
       </div>
       <div class="navbar-desktop-menu-container">
-        <div class="navbar-desktop-menu">About</div>
-        <div class="navbar-desktop-menu">Projects</div>
-        <div class="navbar-desktop-menu">Contact</div>
+        <a class="silent-link" href="./about/">
+          <div class="navbar-desktop-menu">About</div>
+        </a>
+        <a class="silent-link" href="./project/all/">
+          <div class="navbar-desktop-menu">Projects</div>
+        </a>
+        <a class="silent-link" href="./contact/">
+          <div class="navbar-desktop-menu">Contact</div>
+        </a>
       </div>
       <div class="navbar-content">
-        <button class="button-default">About</button>
-        <button class="button-default">Projects</button>
-        <button class="button-default">Contact</button>
+        <a class="silent-link" href="./about/">
+          <button class="button-default">About</button>
+        </a>
+        <a class="silent-link" href="./project/all/">
+          <button class="button-default">Projects</button>
+        </a>
+        <a class="silent-link" href="./contact/">
+          <button class="button-default">Contact</button>
+        </a>
 
         <div class="social-container mobile">
           <a href="mailto:lucien.fradet@hotmail.com"><img src="./data/icons/email.svg" alt="Email Icon"></a>
           <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="./data/icons/instagram.svg" alt="Instagram Icon"></a>
+          <a href="https://github.com/lucienfradet/"><img src="./data/icons/github_icon.svg" alt="Github icon"></a>
         </div>
       </div>
     </div>
@@ -50,74 +61,80 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
         <h2>Selected Work</h2>
       </div>
 
-      <div class="content content-left">
-        <div class="content-wrapper">
-          <div class="media-container">
-            <img class="image" src="./data/images/folioscope_digitale.png" alt="Image of a folioscope device powered by machine learning and running on raspberry pi and arduino">
-            <video src="./data/videos/folioscope_digitale.mp4" class="video" muted loop></video>
-          </div>
-          <div class="content-text">
-            <div class="content-text-block">Digital Folioscope</div>
-            <div class="content-text-block">Machine Learning
-              <br>Micro controller</div>
-
-            <div class="pill-container">
-              <div class="pill" id="pill-left"></div>
-              <div class="pill-text">
-                Show
+      <a href="./project/agentmtl/" class="silent-link">
+        <div class="content content-left">
+          <div class="content-wrapper">
+            <div class="media-container" id="agent-mtl-project">
+              <img class="image" src="./data/images/sim_mtl.png" alt="Image of Lucien in front of a dual screen installation simulating the housing crisis in montreal">
+              <video id="agent-mtl-video" src="./data/videos/agent_run_montreal_main_1.mp4" class="video" muted loop></video>
+            </div>
+            <div class="content-text">
+              <div class="content-text-block">Agent.run!(Montréal)</div>
+              <div class="content-text-block">Agent based modeling
+                <br>Rental crisis in Montreal
               </div>
-              <div class="pill" id="pill-right"></div>
+              <div class="pill-container">
+                <div class="pill" id="pill-left"></div>
+                <div class="pill-text">
+                  Show
+                </div>
+                <div class="pill" id="pill-right"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="content content-right">
-        <div class="content-wrapper">
-          <div class="media-container" id="agent-mtl-project">
-            <img class="image" src="./data/images/sim_mtl.png" alt="Image of Lucien in front of a dual screen installation simulating the housing crisis in montreal">
-            <video src="./data/videos/agent_run_montreal_main_1.mp4" class="video" muted loop></video>
-          </div>
-          <div class="content-text">
-            <div class="content-text-block">Agent.run(Montréal)</div>
-            <div class="content-text-block">Agent based modeling
-              <br>Rental crisis in Montreal
+
+      <a href="./project/folioscope/" class="silent-link">
+        <div class="content content-right">
+          <div class="content-wrapper">
+            <div class="media-container">
+              <img class="image" src="./data/images/folioscope_digitale.png" alt="Image of a folioscope device powered by machine learning and running on raspberry pi and arduino">
+              <video src="./data/videos/folioscope_digitale.mp4" class="video" muted loop></video>
             </div>
-            <div class="pill-container">
-              <div class="pill" id="pill-left"></div>
-              <div class="pill-text">
-                Show
+            <div class="content-text">
+              <div class="content-text-block">Digital Folioscope</div>
+              <div class="content-text-block">Machine Learning
+                <br>Micro controller</div>
+
+              <div class="pill-container">
+                <div class="pill" id="pill-left"></div>
+                <div class="pill-text">
+                  Show
+                </div>
+                <div class="pill" id="pill-right"></div>
               </div>
-              <div class="pill" id="pill-right"></div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="content content-center">
-        <div class="content-wrapper">
-          <div class="media-container" id="map-gazer-project">
-            <img class="image" src="./data/images/map_gazer.png" alt="Image of a plotter connected to a laptop">
-            <video src="./data/videos/Map_Gazer_Demo.mp4" class="video" muted loop></video>
-          </div>
-          <div class="content-text">
-            <div class="content-text-block">Map Gazer
-              <br>w/ Arnaud Jalbert
+      <a href="./project/mapgazer/" class="silent-link">
+        <div class="content content-center">
+          <div class="content-wrapper">
+            <div class="media-container" id="map-gazer-project">
+              <img class="image" src="./data/images/map_gazer.png" alt="Image of a plotter connected to a laptop">
+              <video src="./data/videos/Map_Gazer_Demo.mp4" class="video" muted loop></video>
             </div>
-            <div class="content-text-block">Collective artwork (Prototype)
-              <br>Eye tracking and Gaze Physicalization
-            </div>
-            <div class="pill-container">
-              <div class="pill" id="pill-left"></div>
-              <div class="pill-text">
-                Show
+            <div class="content-text">
+              <div class="content-text-block">Map Gazer
+                <br>w/ Arnaud Jalbert
               </div>
-              <div class="pill" id="pill-right"></div>
+              <div class="content-text-block">Collective artwork (Prototype)
+                <br>Eye tracking and Gaze Physicalization
+              </div>
+              <div class="pill-container">
+                <div class="pill" id="pill-left"></div>
+                <div class="pill-text">
+                  Show
+                </div>
+                <div class="pill" id="pill-right"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
+      </a>
 
       <div class="content content-left">
         <div class="content-wrapper">
@@ -131,6 +148,49 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
             </div>
             <div class="content-text-block">PHP
               <br>SQLite
+            </div>
+            <div class="pill-container">
+              <div class="pill" id="pill-left"></div>
+              <div class="pill-text">
+                Show
+              </div>
+              <div class="pill" id="pill-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content content-right">
+        <div class="content-wrapper">
+          <div class="media-container" id="js-game-project">
+            <img class="image" src="./data/images/js_game_screenshot.png" alt="Screenshot of a Javascript game">
+            <video src="./data/videos/js_game_montage.mp4" class="video" muted loop></video>
+          </div>
+          <div class="content-text">
+            <div class="content-text-block">Javascript games</div>
+            <div class="content-text-block">Pure Javascript
+              <br>Matter.js
+            </div>
+            <div class="pill-container pill-container-special">
+              <div class="pill" id="pill-left"></div>
+              <div class="pill-text">
+                Show
+              </div>
+              <div class="pill" id="pill-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content content-center">
+        <div class="content-wrapper">
+          <div class="media-container" id="graphic-design-project">
+            <img class="image" src="./data/images/graphic_design_montage.png" alt="Screenshot of video projects">
+          </div>
+          <div class="content-text">
+            <div class="content-text-block">Graphic Design</div>
+            <div class="content-text-block">Photoshop
+              <br>Illustrator
             </div>
             <div class="pill-container">
               <div class="pill" id="pill-left"></div>
@@ -165,54 +225,11 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
         </div>
       </div>
 
-      <div class="content content-right">
-        <div class="content-wrapper">
-          <div class="media-container" id="js-game-project">
-            <img class="image" src="./data/images/js_game_screenshot.png" alt="Screenshot of a Javascript game">
-            <video src="./data/videos/js_game_montage.mp4" class="video" muted loop></video>
-          </div>
-          <div class="content-text">
-            <div class="content-text-block">Javascript games</div>
-            <div class="content-text-block">Pure Javascript
-              <br>Matter.js
-            </div>
-            <div class="pill-container">
-              <div class="pill" id="pill-left"></div>
-              <div class="pill-text">
-                Show
-              </div>
-              <div class="pill" id="pill-right"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="content content-center">
-        <div class="content-wrapper">
-          <div class="media-container" id="graphic-design-project">
-            <img class="image" src="./data/images/graphic_design_montage.png" alt="Screenshot of video projects">
-          </div>
-          <div class="content-text">
-            <div class="content-text-block">Graphic Design</div>
-            <div class="content-text-block">Photoshop
-              <br>Illustrator
-            </div>
-            <div class="pill-container">
-              <div class="pill" id="pill-left"></div>
-              <div class="pill-text">
-                Show
-              </div>
-              <div class="pill" id="pill-right"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="content content-left">
         <div class="content-wrapper">
           <div class="media-container multiple-images" id="blender-project">
-            <img class="image" src="./data/images/blender.render.4K.001.png" alt="3D renders">
-            <img class="image other-image" src="./data/images/render_final.png" alt="3D renders">
+            <img class="image image-animate" src="./data/images/blender.render.4K.001.png" alt="3D renders">
+            <img class="image other-image image-animate" src="./data/images/render_final.png" alt="3D renders">
             <video src="./data/videos/3d_montage.mp4" class="video" muted loop></video>
           </div>
           <div class="content-text">
@@ -240,6 +257,7 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
       <div class="buttom-social">
         <a href="mailto:lucien.fradet@hotmail.com"><img src="./data/icons/email.svg" alt="Email Icon"></a>
         <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="./data/icons/instagram.svg" alt="Instagram Icon"></a>
+        <a href="https://github.com/lucienfradet/"><img src="./data/icons/github_icon.svg" alt="Github icon"></a>
       </div>
       <div class="text-centered" id="copyright-text"><span>&copy; 2024 Some rights reserved — Lucien Cusson-Fradet</span></div>
     </footer>

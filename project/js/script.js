@@ -47,8 +47,8 @@ $(document).ready(function() {
   $(window).scroll(checkScrollPosition);
 
   // navbar mobile
-  const navbarIconUrl = '../data/icons/navbar_icon.svg';
-  const navbarIconCloseUrl = '../data/icons/navbar_icon_close.svg';
+  const navbarIconUrl = '../../data/icons/navbar_icon.svg';
+  const navbarIconCloseUrl = '../../data/icons/navbar_icon_close.svg';
 
   let navBarIconFlag = true;
 
