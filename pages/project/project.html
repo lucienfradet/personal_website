@@ -4,69 +4,64 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <!-- <link href="/css/project.css" rel="stylesheet"> -->
     <!-- libraries -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
   </head>
   <body>
     <div class="navbar">
-      <a class="silent-link" href="index.html">
+      <a class="silent-link" href="/index.html">
         <div class="navbar-title">Lucien Cusson-Fradet</div>
       </a>
       <div class="navbar-icon">
         <svg></svg>
       </div>
       <div class="navbar-desktop-menu-container">
-        <a class="silent-link" href="pages/about/about.html">
+        <a class="silent-link" href="/pages/about/about.html">
           <div class="navbar-desktop-menu">About</div>
         </a>
-        <a class="silent-link" href="pages/project/project.html">
-          <div class="navbar-desktop-menu">Projects</div>
+        <a class="silent-link" href="/pages/project/project.html">
+          <div class="navbar-desktop-menu selected">Projects</div>
         </a>
-        <a class="silent-link" href="pages/contact/contact.html">
+        <a class="silent-link" href="/pages/contact/contact.html">
           <div class="navbar-desktop-menu">Contact</div>
         </a>
       </div>
       <div class="navbar-content">
-        <a class="silent-link" href="pages/about/about.html">
+        <a class="silent-link" href="/pages/about/about.html">
           <button class="button-default">About</button>
         </a>
-        <a class="silent-link" href="pages/project/project.html">
-          <button class="button-default">Projects</button>
+        <a class="silent-link" href="/pages/project/project.html">
+          <button class="button-default selected">Projects</button>
         </a>
-        <a class="silent-link" href="pages/contact/contact.html">
+        <a class="silent-link" href="/pages/contact/contact.html">
           <button class="button-default">Contact</button>
         </a>
 
         <div class="social-container mobile">
-          <a href="mailto:lucien.fradet@hotmail.com"><img src="data/icons/email.svg" alt="Email Icon"></a>
-          <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="data/icons/instagram.svg" alt="Instagram Icon"></a>
-          <a href="https://github.com/lucienfradet/"><img src="data/icons/github_icon.svg" alt="Github icon"></a>
+          <a href="mailto:lucien.fradet@hotmail.com"><img src="/data/icons/email.svg" alt="Email Icon"></a>
+          <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="/data/icons/instagram.svg" alt="Instagram Icon"></a>
+          <a href="https://github.com/lucienfradet/"><img src="/data/icons/github_icon.svg" alt="Github icon"></a>
         </div>
       </div>
     </div>
 
-    <section class="intro-section">
-      <div class="intro-text-container">
-        <h1>
-Lucien Cusson-Fradet is a dynamic computation arts student at Concordia University, exploring the nexus of art and technology. With a diverse skill set spanning programming, web development, creative machine learning, and more, Lucien's work reflects a fusion of innovation and artistic expression.
-        </h1>
+    <div class="intro-section">
+      <div class="title-container">
+        <h2>Projects</h2>
       </div>
-    </section>
+    </div>
 
     <div class="work-selection">
 
-      <div class="title-container">
-        <h2>Selected Work</h2>
-      </div>
-
-      <a href="pages/project/agentmtl/agentmtl.html" class="silent-link">
+      <a href="/pages/project/agentmtl/agentmtl.html" class="silent-link">
         <div class="content content-left">
           <div class="content-wrapper">
             <div class="media-container" id="agent-mtl-project">
-              <img class="image" src="data/images/sim_mtl.png" alt="Image of Lucien in front of a dual screen installation simulating the housing crisis in montreal">
-              <video id="agent-mtl-video" src="data/videos/agent_run_montreal_main_1.mp4" class="video" muted loop></video>
+              <img class="image" src="/data/images/sim_mtl.png" alt="Image of Lucien in front of a dual screen installation simulating the housing crisis in montreal">
+              <video id="agent-mtl-video" src="/data/videos/agent_run_montreal_main_1.mp4" class="video" muted loop></video>
             </div>
             <div class="content-text">
               <div class="content-text-block">Agent.run!(Montréal)</div>
@@ -90,8 +85,8 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
         <div class="content content-right">
           <div class="content-wrapper">
             <div class="media-container">
-              <img class="image" src="data/images/folioscope_digitale.png" alt="Image of a folioscope device powered by machine learning and running on raspberry pi and arduino">
-              <video src="data/videos/folioscope_digitale.mp4" class="video" muted loop></video>
+              <img class="image" src="/data/images/folioscope_digitale.png" alt="Image of a folioscope device powered by machine learning and running on raspberry pi and arduino">
+              <video src="/data/videos/folioscope_digitale.mp4" class="video" muted loop></video>
             </div>
             <div class="content-text">
               <div class="content-text-block">Digital Folioscope</div>
@@ -114,8 +109,8 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
         <div class="content content-center">
           <div class="content-wrapper">
             <div class="media-container" id="map-gazer-project">
-              <img class="image" src="data/images/map_gazer.png" alt="Image of a plotter connected to a laptop">
-              <video src="data/videos/Map_Gazer_Demo.mp4" class="video" muted loop></video>
+              <img class="image" src="/data/images/map_gazer.png" alt="Image of a plotter connected to a laptop">
+              <video src="/data/videos/Map_Gazer_Demo.mp4" class="video" muted loop></video>
             </div>
             <div class="content-text">
               <div class="content-text-block">Map Gazer
@@ -136,11 +131,11 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
         </div>
       </a>
 
-      <a href="pages/project/webapps/webapps.html" class="silent-link">
+      <a href="/pages/project/webapps/webapps.html" class="silent-link">
         <div class="content content-left">
           <div class="content-wrapper">
             <div class="media-container" id="web-app-project">
-              <img class="image" src="data/images/ajoutetongraindesel.png" alt="Screenshot of a web application showing a map and date">
+              <img class="image" src="/data/images/ajoutetongraindesel.png" alt="Screenshot of a web application showing a map and date">
             </div>
             <div class="content-text">
               <div class="content-text-block">Web applications</div>
@@ -162,12 +157,12 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
         </div>
       </a>
 
-      <a class="silent-link" href="pages/project/javascriptgames/javascriptgames.html">
+      <a class="silent-link" href="/pages/project/javascriptgames/javascriptgames.html">
         <div class="content content-right">
           <div class="content-wrapper">
             <div class="media-container" id="js-game-project">
-              <img class="image" src="data/images/js_game_screenshot.png" alt="Screenshot of a Javascript game">
-              <video src="data/videos/js_game_montage.mp4" class="video" muted loop></video>
+              <img class="image" src="/data/images/js_game_screenshot.png" alt="Screenshot of a Javascript game">
+              <video src="/data/videos/js_game_montage.mp4" class="video" muted loop></video>
             </div>
             <div class="content-text">
               <div class="content-text-block">Javascript games</div>
@@ -190,7 +185,7 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
         <div class="content content-center">
           <div class="content-wrapper">
             <div class="media-container" id="graphic-design-project">
-              <img class="image" src="data/images/graphic_design_montage.png" alt="Screenshot of video projects">
+              <img class="image" src="/data/images/graphic_design_montage.png" alt="Screenshot of video projects">
             </div>
             <div class="content-text">
               <div class="content-text-block">Graphic Design</div>
@@ -212,8 +207,8 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
       <div class="content content-center">
         <div class="content-wrapper">
           <div class="media-container" id="video-work-project">
-            <img class="image" src="data/images/video_edit.png" alt="Screenshot of video projects">
-            <video src="data/videos/video_work_montage.mp4" class="video" muted loop></video>
+            <img class="image" src="/data/images/video_edit.png" alt="Screenshot of video projects">
+            <video src="/data/videos/video_work_montage.mp4" class="video" muted loop></video>
           </div>
           <div class="content-text">
             <div class="content-text-block">Video work<br>Animation<br>Documentary<br></div>
@@ -231,26 +226,48 @@ Lucien Cusson-Fradet is a dynamic computation arts student at Concordia Universi
         </div>
       </div>
 
-    </div>
+      <div class="content content-left">
+        <div class="content-wrapper">
+          <div class="media-container multiple-images" id="blender-project">
+            <img class="image image-animate" src="/data/images/blender.render.4K.001.png" alt="3D renders">
+            <img class="image other-image image-animate" src="/data/images/render_final.png" alt="3D renders">
+            <video src="/data/videos/3d_montage.mp4" class="video" muted loop></video>
+          </div>
+          <div class="content-text">
+            <div class="content-text-block">3D Creations</div>
+            <div class="content-text-block">Blender
+              <br>Substance Painter
+            </div>
+            <div class="pill-container">
+              <div class="pill innactive" id="pill-left"></div>
+              <div class="pill-text innactive">
+                Page Not<br>Ready
+              </div>
+              <div class="pill innactive" id="pill-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </div>
 
     <footer>
       <div id="button-view-all-work-wrapper">
-        <a href="pages/project/project.html">
-          <button class="button-default" id="button-view-all-work">View All Work</button>
+        <a href="/pages/about/about.html">
+          <button class="button-default" id="button-view-all-work">Learn More</button>
         </a>
       </div>
 
       <div class="footer-wrapper">
         <div class="buttom-social">
-          <a href="mailto:lucien.fradet@hotmail.com"><img src="data/icons/email.svg" alt="Email Icon"></a>
-          <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="data/icons/instagram.svg" alt="Instagram Icon"></a>
-          <a href="https://github.com/lucienfradet/"><img src="data/icons/github_icon.svg" alt="Github icon"></a>
+          <a href="mailto:lucien.fradet@hotmail.com"><img src="/data/icons/email.svg" alt="Email Icon"></a>
+          <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="/data/icons/instagram.svg" alt="Instagram Icon"></a>
+          <a href="https://github.com/lucienfradet/"><img src="/data/icons/github_icon.svg" alt="Github icon"></a>
         </div>
         <div class="text-centered" id="copyright-text"><span>&copy; 2024 Some rights reserved — Lucien Cusson-Fradet</span></div>
       </div>
     </footer>
   </body>
 
-  <script src="js/script.js"></script>
+  <script src="/js/script.js"></script>
 </html>

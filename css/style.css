@@ -299,7 +299,7 @@ h2 {
 }
 
 .content-wrapper {
-  align-self: flex-end;
+  /* align-self: flex-end; */
 }
 
 .media-container {
@@ -475,10 +475,20 @@ footer {
   margin-left: 40px;
   border-radius: 40px 40px 40px 40px; 
 }
+.content-wrapper:hover #pill-right.innactive {
+  background-color: darkred;
+}
+.content-wrapper:hover #pill-left.innactive {
+  background-color: darkred;
+}
 
 .content-wrapper:hover .pill-text {
   opacity: 1; /* Show text on hover */
   font-size: 20pt;
+}
+
+.content-wrapper:hover .pill-text.innactive {
+  font-size: 13pt;
 }
 
 .content-wrapper:hover .pill-container-special {
@@ -488,6 +498,12 @@ footer {
 
 .silent-link {
   text-decoration: none;
+  color: inherit;
+}
+
+.link-bold {
+  text-decoration: none;
+  font-weight: 600;
   color: inherit;
 }
 
@@ -563,6 +579,9 @@ footer {
 
   .content-wrapper:hover .pill-text {
     font-size: 17pt;
+  }
+  .content-wrapper:hover .pill-text.innactive {
+    font-size: 10pt;
   }
 }
 
