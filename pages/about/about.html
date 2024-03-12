@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/contact.css" rel="stylesheet">
+    <link href="/css/about.css" rel="stylesheet">
     <!-- libraries -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -20,10 +20,10 @@
       </div>
       <div class="navbar-desktop-menu-container">
         <a class="silent-link" href="/pages/about/about.html">
-          <div class="navbar-desktop-menu selected">About</div>
+          <div class="navbar-desktop-menu selected">A propos</div>
         </a>
         <a class="silent-link" href="/pages/project/project.html">
-          <div class="navbar-desktop-menu">Projects</div>
+          <div class="navbar-desktop-menu">Projets</div>
         </a>
         <a class="silent-link" href="/pages/contact/contact.html">
           <div class="navbar-desktop-menu">Contact</div>
@@ -31,10 +31,10 @@
       </div>
       <div class="navbar-content">
         <a class="silent-link" href="/pages/about/about.html">
-          <button class="button-default selected">About</button>
+          <button class="button-default selected">A propos</button>
         </a>
         <a class="silent-link" href="/pages/project/project.html">
-          <button class="button-default">Projects</button>
+          <button class="button-default">Projets</button>
         </a>
         <a class="silent-link" href="/pages/contact/contact.html">
           <button class="button-default">Contact</button>
@@ -48,20 +48,50 @@
       </div>
     </div>
 
+    <section class="intro-section">
+      <div class="intro-text-container">
+        <h1>
+          Je suis un artiste basé à Montréal, étudiant en arts numériques à l'Université Concordia et sur le point d'obtenir mon baccalauréat. Ma passion réside dans la création de projets artistiques novateurs qui repoussent les frontières du monde numérique. Je possède une solide compétence en programmation, ayant exploré divers domaines tels que la <span class="number-text">3D</span>, la vidéo, le design de jeux, l'apprentissage machine et le développement web. En outre, mes aptitudes étendues incluent les languages <i>java</i>, <i>javascript</i>, <i>html</i>, <i>css</i>, <i>php</i>, <i>sqlite</i>, <i>julia</i>, <i>python</i>, les logiciels des la suite <i>Adobe</i>, les logiciels <i>Blender</i> et <i>Unity</i>, une expertise modéré avec <i>Linux</i> ainsi que la gestion de serveurs simples.
+        </h1>
+      </div>
+    </section>
 
     <div class="project-container">
+      <div class="image-wrapper">
+        <img class="moving-image" src="/data/images/lucien_photo.jpg" alt="Picture of Lucien with a pipe in the mouth">
+      </div>
+      <div class="about-wrapper">
+        <div class="about-paragraph-wrapper">
+          <p>
+            Née et élevée sur la rive sud de Montréal, je me suis installé sur l'île il y a près d'une décennie. Mon parcours professionnel m'a conduit à travailler pendant de nombreuses années dans le domaine de la restauration, occupant des postes de cuisinier, serveur et barista dans divers restaurants de Montréal. J'ai même eu l'occasion de gérer une petite équipe dans l'un de ces établissements, ce qui m'a permis de développer mes compétences en leadership et en gestion. En <span class="number-text">2021</span>, j'ai pris la décision de retourner aux études, cherchant à exploiter mes compétences sociales dans de nouveaux domaines.
 
-      <div class="title-container">
-        <h2>About</h2>
+          </p>
+          <p>
+            Fort de mon expérience, je sais travailler efficacement en équipe et je suis passionné par les interactions humaines. Je m'intègre facilement dans n'importe quelle équipe et je suis toujours prêt à relever de nouveaux défis. Je suis particulièrement intéressé par les petites entreprises qui fusionnent l'art et la technologie, car je crois fermement à leur capacité à façonner un avenir meilleur. Mon objectif est de contribuer à ces initiatives et de mettre mes compétences au service de projets qui ont un impact positif sur la société.
+          </p>
       </div>
 
+      <div class="list-section-wrapper">
+          <div class="heading-wrapper">
+            <div class="div-block">
+              <h1>CV</h1>
+            </div>
+            <a class="silent-link" href="/data/documents/Lucien_CUSSON-FRADET_CV_2024.pdf">
+              <div class="div-block-right">
+                <i>Curriculum Vitae</i>↗
+              </div>
+            </a>
+          </div>
+        
+      </div>
     </div>
+
 
 
     <footer>
       <div id="button-view-all-work-wrapper">
         <a href="/pages/project/project.html">
-          <button class="button-default" id="button-view-all-work">View Projects</button>
+          <button class="button-default" id="button-view-all-work">Voir les Projects</button>
         </a>
       </div>
 
@@ -71,10 +101,11 @@
           <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="/data/icons/instagram.svg" alt="Instagram Icon"></a>
           <a href="https://github.com/lucienfradet/"><img src="/data/icons/github_icon.svg" alt="Github icon"></a>
         </div>
-        <div class="text-centered" id="copyright-text"><span>&copy; 2024 Some rights reserved — Lucien Cusson-Fradet</span></div>
+        <div class="text-centered number-text" id="copyright-text"><span>&copy; 2024 Certains droits réservés - Lucien Cusson-Fradet</span></div>
       </div>
     </footer>
   </body>
 
   <script src="/js/script.js"></script>
+  <script src="/js/about.js"></script>
 </html>

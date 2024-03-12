@@ -1,5 +1,31 @@
+.margin-wrapper {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 8em;
+  padding-left: 6em;
+  padding-right: 6em;
+  position: relative;
+}
+
+.about-paragraph-wrapper {
+  column-count: 2;
+  column-gap: 3em;
+  padding-bottom: 8em;
+}
+
+.about-paragraph-wrapper p {
+  margin-top: 0;
+  font-family: AgeoTrialMedium;
+  text-align: justify;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+
 .project-container {
-  padding: 12em 2em 2em 2em;
+  padding: 0em 4em 8em 8em;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -8,7 +34,7 @@
 
 .project-text h2 {
   margin-bottom: .25em;
-  font-family: Athletics,sans-serif;
+  font-family: AgeoTrialMedium;
   font-size: 1.5em;
   font-weight: 400;
   line-height: 1.2;
@@ -20,4 +46,104 @@
   width: 40%; 
   vertical-align: top;  
   text-align: justify;
+}
+
+.intro-section {
+  padding-top: 8em;
+  padding-bottom: 1em;
+}
+
+.intro-text-container h1 {
+  text-align: justify;
+}
+
+.image-wrapper img {
+  margin-bottom: 7em;
+  width: 35vw;
+  border-radius: 20px;
+}
+
+.moving-image {
+  transition: transform 0.3s;
+}
+
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.list-section-wrapper {
+  margin-bottom: 8em;
+  padding-bottom: 0;
+}
+
+.heading-wrapper {
+  border-bottom: 1px solid #000;
+  padding-bottom: 2em;
+}
+
+.heading-wrapper h1 {
+  margin-bottom: .25em;
+  font-family: AgeoTrialMedium;
+  font-size: 3.2em;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.div-block {
+  display: inline-block;
+}
+
+.div-block-right {
+  float: right;
+  color: #000;
+  font-size: 2.5em;
+  margin-top: .5em;
+  margin-left: 1em;
+  padding: .75em 1.75em;
+}
+
+@media screen and (max-width: 991px) {
+  .intro-section {
+    padding-top: 12em;
+  }
+
+  .project-text h2 {
+    font-size: 2em;
+  }
+
+  .project-text-inner {
+    width: 47.6%; 
+  }
+
+
+  .about-paragraph-wrapper p {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .intro-section {
+    font-size: 1.7em;
+  }
+
+  .project-container img {
+    width: 60vw;
+  }
+
+
+  .project-text h2 {
+    font-size: 3em;
+  }
+
+  .project-text-inner {
+    width: 47.6%; 
+  }
+
+  .about-paragraph-wrapper p {
+    font-size: 3em;
+  }
 }

@@ -21,3 +21,69 @@
   vertical-align: top;  
   text-align: justify;
 }
+
+.contact-wrapper {
+    height: 100vh;
+    max-width: 1600px;
+    color: #000;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6em;
+    padding-right: 6em;
+    display: flex;
+    overflow: hidden;
+}
+
+.big-name-container h1 {
+  font-family: Gooper-Regular;
+  text-align: center;
+  font-size: 5.6em;
+}
+
+.big-name-container h2 {
+  font-family: AgeoTrialMedium;
+  text-align: center;
+  padding: 0 2em 0 2em;
+}
+
+.title-container {
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+
+.title-container h2 {
+  font-family: AgeoTrialMedium;
+}
+
+.silent-link {
+    margin-right: 1.6em; /* Adjust the value to increase or decrease space */
+  }
+
+@media screen and (max-width: 479px) {
+  .contact-wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 87vh;
+  }
+
+  .big-name-container h2 {
+    padding: 0 0.2em 0 0.2em;
+    font-size: 4em;
+  }
+
+  .title-container h2 {
+    font-size: 5.5em;
+  }
+
+  .big-name-container h1 {
+    font-size: 7.3em;
+  }
+
+  .silent-link {
+    margin-right: 0.2em; /* Adjust the value to increase or decrease space */
+  }
+}
