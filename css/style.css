@@ -45,6 +45,20 @@ body {
   transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
+.side-to-side-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-to-side {
+  display: flex;
+  justify-content: space-between; /* Distribute space between the images */
+  align-items: center; /* Center images vertically */
+  width: 100%; /* Adjust width as needed */
+  max-width: 1200px; /* Optional: Set a max-width for the container */
+  box-sizing: border-box;
+}
 
 .navbar-title {
   font-family: Gooper-LightItalic;
