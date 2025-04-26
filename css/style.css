@@ -675,6 +675,19 @@ body.dark-mode .navbar-icon.active svg {
   color: white !important;
 }
 
+.buttom-social,
+.social-container.mobile {
+  transition: filter 1s ease;
+}
+
+body.dark-mode .buttom-social {
+  filter: invert(1) !important;
+}
+
+body.dark-mode .social-container.mobile {
+  filter: invert(1) !important;
+}
+
 body.dark-mode .navbar-icon svg *,
 body.dark-mode .navbar-icon svg path,
 body.dark-mode .navbar-icon svg line,
