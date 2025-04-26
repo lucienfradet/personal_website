@@ -318,10 +318,6 @@ h2 {
   height: calc(100% - 1%);
 }
 
-.content-wrapper {
-  /* align-self: flex-end; */
-}
-
 .media-container {
   position: relative;
   align-content: center;
@@ -549,6 +545,169 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Set the color of the scrollbar thumb on hover */
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-toggle.desktop {
+  margin-left: 2em;
+}
+
+.dark-mode-toggle.mobile {
+  margin-top: 2em;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.dark-mode-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-button:hover {
+  transform: rotate(15deg);
+}
+
+/* Show the sun icon in dark mode, moon icon in light mode */
+.sun-icon {
+  display: none;
+}
+
+.moon-icon {
+  display: block;
+}
+
+/* Dark theme styles */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: whitesmoke !important;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .navbar-content {
+  background-color: #121212 !important;
+}
+
+body.dark-mode .navbar-title,
+body.dark-mode .navbar-desktop-menu,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode .content-text-block,
+body.dark-mode #copyright-text,
+body.dark-mode .project-text h2,
+body.dark-mode .about-paragraph-wrapper p,
+body.dark-mode .link-bold,
+body.dark-mode .silent-link {
+  color: whitesmoke !important;
+}
+
+body.dark-mode .navbar-desktop-menu:hover {
+  color: goldenrod !important;
+}
+
+body.dark-mode .button-default {
+  background-color: #333;
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+body.dark-mode .button-default.selected,
+body.dark-mode .button-default:hover {
+  background-color: whitesmoke;
+  color: #121212;
+}
+
+body.dark-mode .dark-mode-button {
+  color: whitesmoke;
+}
+
+body.dark-mode .sun-icon {
+  display: block;
+}
+
+body.dark-mode .moon-icon {
+  display: none;
+}
+
+body.dark-mode .heading-wrapper {
+  border-bottom: 1px solid whitesmoke;
+}
+
+body.dark-mode .pill {
+  background-color: whitesmoke;
+}
+
+
+body.dark-mode .div-block-right {
+  color: whitesmoke;
+}
+
+body.dark-mode .content-wrapper:hover #pill-left,
+body.dark-mode .content-wrapper:hover #pill-right {
+  background-color: goldenrod;
+}
+
+body.dark-mode .content-wrapper:hover #pill-left.innactive,
+body.dark-mode .content-wrapper:hover #pill-right.innactive {
+  background-color: darkred;
+}
+
+body.dark-mode .pill-text {
+  color: whitesmoke;
+}
+
+/* Fix for navbar SVG icons in dark mode */
+body.dark-mode .navbar-icon svg,
+body.dark-mode .navbar-icon.page-load svg,
+body.dark-mode .navbar-icon:not(.active) svg,
+body.dark-mode .navbar-icon.active svg {
+  filter: invert(1) !important;
+  fill: white !important;
+  stroke: white !important;
+  color: white !important;
+}
+
+body.dark-mode .navbar-icon svg *,
+body.dark-mode .navbar-icon svg path,
+body.dark-mode .navbar-icon svg line,
+body.dark-mode .navbar-icon svg circle,
+body.dark-mode .navbar-icon svg rect {
+  fill: white !important;
+  stroke: white !important;
+  color: white !important;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 991px) {
+  .dark-mode-toggle.desktop {
+    display: none;
+  }
+  
+  .dark-mode-toggle.mobile {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .dark-mode-toggle.mobile {
+    display: none;
+  }
+  
+  .dark-mode-toggle.desktop {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 991px) {

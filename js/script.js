@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  const LOCAL_STORAGE_DARK_MODE_NAME = "lucienCussonFradetPersonalWebSiteDarkMode";
+
   // Function to check screen size
   let mobileFlag = false;
   function checkScreenSize() {
@@ -227,4 +229,48 @@ $(document).ready(function() {
     // Apply transform: rotate(0deg); to #button-view-all-work
     $("#button-view-all-work").css("transform", "rotate(0deg)");
   });
+
+  // Dark mode functionality
+  // Check if user has a preference stored
+  const darkModePreference = localStorage.getItem(LOCAL_STORAGE_DARK_MODE_NAME);
+  
+  // Apply dark mode if preference exists
+  if (darkModePreference === 'enabled') {
+    $('body').addClass('dark-mode');
+  }
+  
+  // Toggle dark mode function
+  function toggleDarkMode() {
+    // Toggle dark mode class on body
+    $('body').toggleClass('dark-mode');
+    
+    // Update localStorage based on current state
+    if ($('body').hasClass('dark-mode')) {
+      localStorage.setItem(LOCAL_STORAGE_DARK_MODE_NAME, 'enabled');
+    } else {
+      localStorage.setItem(LOCAL_STORAGE_DARK_MODE_NAME, 'disabled');
+    }
+  }
+  
+  // Click handlers for both desktop and mobile toggles
+  $('#darkModeToggleDesktop, #darkModeToggleMobile').click(function() {
+    toggleDarkMode();
+  });
+  
+  // Handle navbar SVG icons (if needed - using CSS filter approach)
+  function loadNavbarIcon() {
+    const isDarkMode = $('body').hasClass('dark-mode');
+    const iconUrl = navBarIconFlag ? navbarIconUrl : navbarIconCloseUrl;
+    
+    $.ajax({
+      url: iconUrl,
+      dataType: 'text',
+      success: function(svgContent) {
+        $('.navbar-icon svg').html(svgContent);
+      },
+      error: function(error) {
+        console.error('Error fetching SVG:', error);
+      }
+    });
+  }
 })
