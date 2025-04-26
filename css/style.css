@@ -613,10 +613,6 @@ body.dark-mode .silent-link {
   color: whitesmoke !important;
 }
 
-body.dark-mode .navbar-desktop-menu:hover {
-  color: goldenrod !important;
-}
-
 body.dark-mode .button-default {
   background-color: #333;
   color: whitesmoke;
