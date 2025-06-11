@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Lucien Cusson-Fradet - Site personnel" />
+    <meta property="og:description" content="Portfolio de Lucien Cusson-Fradet, artiste numérique de Montréal" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lucienfradet.xyz/data/images/site_preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/project.css" rel="stylesheet">
+    <link href="/css/image-slider.css" rel="stylesheet">
+    <!-- libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="silent-link" href="/index.html">
+        <div class="navbar-title">Lucien Cusson-Fradet</div>
+      </a>
+      <div class="navbar-icon">
+        <svg></svg>
+      </div>
+      <div class="navbar-desktop-menu-container">
+        <a class="silent-link" href="/pages/about/about.html">
+          <div class="navbar-desktop-menu">A propos</div>
+        </a>
+        <a class="silent-link" href="/pages/project/project.html">
+          <div class="navbar-desktop-menu">Projets</div>
+        </a>
+        <a class="silent-link" href="/pages/contact/contact.html">
+          <div class="navbar-desktop-menu">Contact</div>
+        </a>
+        <div class="dark-mode-toggle desktop">
+          <button id="darkModeToggleDesktop" class="dark-mode-button" aria-label="Toggle dark mode">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-content">
+        <a class="silent-link" href="/pages/about/about.html">
+          <button class="button-default">A propos</button>
+        </a>
+        <a class="silent-link" href="/pages/project/project.html">
+          <button class="button-default">Projets</button>
+        </a>
+        <a class="silent-link" href="/pages/contact/contact.html">
+          <button class="button-default">Contact</button>
+        </a>
+
+        <div class="dark-mode-toggle mobile">
+          <button id="darkMobileToggleMobile" class="dark-mode-button" aria-label="Toggle dark mode">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="social-container mobile">
+          <a href="mailto:contact@lucienfradet.xyz"><img src="/data/icons/email.svg" alt="Email Icon"></a>
+          <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="/data/icons/instagram.svg" alt="Instagram Icon"></a>
+          <a href="https://github.com/lucienfradet/"><img src="/data/icons/github_icon.svg" alt="Github icon"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="project-container">
+
+      <div class="title-container">
+        <h2>Le Jardin des Chefs</h2>
+        <h3>Site web et image de marque complète</h3>
+      </div>
+
+      <!-- Image Slider pour logos et packaging -->
+      <div class="image-slider-wrapper">
+        <div class="image-slider-container">
+          <img src="/data/images/jdc/jdc-logo.jpg" alt="Logo du Jardin des Chefs">
+          <img src="/data/images/jdc/jdc-preview.jpg" alt="Logo du Jardin des Chefs version deux">
+          <img src="/data/images/jdc/jdc-poster.jpg" alt="Poster du Jardin des Chefs">
+          <img src="/data/images/jdc/chutney.jpg" alt="Logo du Jardin des Chefs version deux">
+          <img src="/data/images/jdc/gelee-scaled.webp" alt="Produit gelée du Jardin des Chefs">
+          <img src="/data/images/jdc/huile-scaled.webp" alt="Produit huile du Jardin des Chefs">
+          <img src="/data/images/jdc/sambal_arbre-scaled.webp" alt="Produit sambal du Jardin des Chefs">
+          <img src="/data/images/jdc/fabric-logo-mockup_export.jpg" alt="Mockup du logo sur tissu">
+          <img src="/data/images/jdc/mockup_pots_render.jpg" alt="Rendu 3D des pots de produits">
+          <img src="/data/images/jdc/mockup_box_render.jpg" alt="Rendu 3D de l'emballage boîte">
+        </div>
+        <button class="image-slider-button image-slider-prev">&#10094;</button>
+        <button class="image-slider-button image-slider-next">&#10095;</button>
+        <div class="image-slider-counter">1/9</div>
+      </div>
+
+      <div class="project-text">
+        <h2>
+          <strong>Projet complet de développement web et d'image de marque</strong><br><br>
+          Le Jardin des Chefs est une ferme maraîchère située dans Charlevoix qui 
+          produit des légumes biologiques et des produits transformés artisanaux. 
+          J'ai développé l'identité visuelle complète de l'entreprise ainsi qu'un 
+          site web <i>full-stack</i> entièrement personnalisé pour leurs besoins 
+          spécifiques de vente en ligne et de réservation de visites de ferme.
+
+          <br><br>
+
+          <strong>Livrables du projet :</strong>
+          <br>• Identité visuelle et logo
+          <br>• Design d'emballages pour produits transformés
+          <br>• Site web e-commerce complet avec système de réservation
+          <br>• Architecture de déploiement haute disponibilité
+          <br>• Système de gestion de contenu personnalisé
+        </h2>
+      </div>
+
+      <!-- Section Architecture Technique -->
+      <div class="title-container">
+        <h2>Architecture Technique</h2>
+      </div>
+
+      <div class="content">
+        <div class="content-wrapper">
+          <div class="media-container image-fill">
+            <a href="https://jardindeschefs.ca" target="_blank">
+              <img src="/data/images/jdc/jdc_website_screenshot.jpg" alt="Web application about food on a map">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-text">
+        <h2>
+          <strong>Frontend Next.js <span class="number-text">13</span>+ avec App Router</strong><br>
+          Le site utilise React <span class="number-text">18</span> et Next.js pour une expérience utilisateur 
+          moderne et performante. L'interface est développée avec CSS Modules 
+          pour un styling modulaire et maintenable.
+
+          <br><br>
+
+          <strong>Backend Headless WordPress + WooCommerce</strong><br>
+          Content Management System découplé permettant une gestion flexible 
+          du contenu et des produits. WooCommerce gère l'inventaire, les commandes 
+          et la logistique de livraison avec points de chute personnalisés.
+
+          <br><br>
+
+          <strong>Système de Paiement Stripe</strong><br>
+          Intégration complète avec webhooks pour le traitement sécurisé des 
+          paiements et la gestion automatisée des statuts de commande.
+
+          <br><br>
+
+          <strong>Déploiement Production Digital Ocean</strong><br>
+          Architecture containerisée avec Docker Compose sur Ubuntu <span class="number-text">22.04</span>, 
+          incluant load balancer Traefik pour la haute disponibilité et 
+          Watchtower pour les mises à jour automatiques sans interruption.
+        </h2>
+      </div>
+
+      <!-- Section Infrastructure -->
+      <div class="title-container">
+        <h2>Infrastructure & Haute Disponibilité</h2>
+      </div>
+
+      <div class="project-text">
+        <h2>
+          <strong>Architecture Multi-Container</strong><br>
+          • Deux instances Next.js avec load balancing
+          <br>• Sessions persistantes (sticky sessions)
+          <br>• Health checks automatiques
+          <br>• Mises à jour en mode rolling sans interruption
+
+          <br><br>
+
+          <strong>Sécurité & Performance</strong><br>
+          • Headers de sécurité complets (CSP, HSTS, CORS)
+          <br>• Protection CSRF pour toutes les transactions
+          <br>• Redis pour la mise en cache et gestion de sessions
+          <br>• Bases de données séparées pour WordPress et commandes
+          <br>• Sauvegardes automatisées chiffrées vers Nextcloud
+
+          <br><br>
+
+          <strong>Monitoring & Notifications</strong><br>
+          • Surveillance automatique des services
+          <br>• Notifications temps réel via ntfy
+          <br>• Récupération automatique en cas de panne
+          <br>• Alertes critiques pour pannes infrastructure
+        </h2>
+      </div>
+
+      <!-- Section Fonctionnalités -->
+      <div class="title-container">
+        <h2>Fonctionnalités Spécialisées</h2>
+      </div>
+
+      <div class="project-text">
+        <h2>
+          <strong>Système de Réservation de Visites</strong><br>
+          Développement d'un système personnalisé permettant aux visiteurs 
+          de réserver et payer en ligne leurs visites de ferme. Gestion 
+          automatisée des disponibilités, confirmations par email et 
+          intégration avec le système de paiement.
+
+          <br><br>
+
+          <strong>E-commerce Adapté à l'Agriculture</strong><br>
+          • Gestion des points de chute multiples
+          <br>• Calcul automatique des taxes par province
+          <br>• Classes d'expédition flexibles (livraison/pickup)
+          <br>• Gestion saisonnière des produits
+
+          <br><br>
+
+          <strong>API Personnalisées</strong><br>
+          • Endpoints pour produits et locations de pickup
+          <br>• Calcul de taxes en temps réel
+          <br>• Gestion d'états des commandes
+          <br>• Nettoyage automatique des données expirées
+
+          <br><br>
+
+          <strong>Workflow de Déploiement</strong><br>
+          Système à trois branches (dev/test/main) avec pipeline CI/CD 
+          GitHub Actions, construction automatique de containers et 
+          déploiement via GitHub Container Registry.
+        </h2>
+
+        <h2>
+          <br><br>Visitez le site : <a class="link-bold" href="https://jardindeschefs.ca">jardindeschefs.ca</a>↗
+          <br>Architecture disponible sur <a class="link-bold" href="https://github.com/lucienfradet/jdc-nextjs-wp-website">GitHub</a>↗
+        </h2>
+      </div>
+    </div>
+
+
+    <footer>
+      <div id="button-view-all-work-wrapper">
+        <a class="silent-link" href="/pages/project/project.html">
+          <button class="button-default" id="button-view-all-work">Plus de Projets</button>
+        </a>
+      </div>
+
+      <div class="footer-wrapper">
+        <div class="buttom-social">
+          <a href="mailto:contact@lucienfradet.xyz"><img src="/data/icons/email.svg" alt="Email Icon"></a>
+          <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="/data/icons/instagram.svg" alt="Instagram Icon"></a>
+          <a href="https://github.com/lucienfradet/"><img src="/data/icons/github_icon.svg" alt="Github icon"></a>
+        </div>
+        <div class="text-centered number-text" id="copyright-text"><span>&copy; 2024 Certains droits réservés - Lucien Cusson-Fradet</span></div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/js/script.js"></script>
+  <script src="/js/image-slider.js"></script>
+</html>
