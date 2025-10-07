@@ -125,7 +125,7 @@ $(document).ready(function() {
 
   // fix dansleblanc-video
   $('#dansleblanc-video').on('loadedmetadata', function() {
-    this.currentTime = 38;
+    this.currentTime = 0;
   });
 
   let images = $('.multiple-images img');
