@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Ici Premiere MTL Stream</title>
+    <link>https://ici.radio-canada.ca/ohdio/premiere</link>
+    <description>Live radio stream</description>
+    <item>
+      <title>Live Stream</title>
+      <enclosure url="http://18313.live.streamtheworld.com/CBFFM_SRC.mp3" type="audio/mpeg"/>
+      <guid>icipremiere-live-stream</guid>
+      <pubDate>Fri, 05 Dec 2025 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
