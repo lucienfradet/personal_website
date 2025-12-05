@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>N10AS Radio Stream</title>
+    <link>https://n10.as</link>
+    <description>Live radio stream</description>
+    <item>
+      <title>Live Stream</title>
+      <enclosure url="https://n10as.radiocult.fm/stream" type="audio/mpeg"/>
+      <guid>n10as-live-stream</guid>
+      <pubDate>Fri, 05 Dec 2025 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
