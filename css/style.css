@@ -1,21 +1,29 @@
 @font-face {
+  font-family: AgeoTrialMedium;
+  src: url('../data/fonts/AgeoTrialMedium.woff2') format('woff2'),
+       url('../data/fonts/AgeoTrialMedium.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
   font-family: Gooper-LightItalic;
-  src: url('../data/fonts/Gooper-LightItalic.ttf') format('truetype');
+  src: url('../data/fonts/Gooper-LightItalic.woff2') format('woff2'),
+       url('../data/fonts/Gooper-LightItalic.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gooper-BoldItalic;
-  src: url('../data/fonts/Gooper-BoldItalic.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: AgeoTrialMedium;
-  src: url('../data/fonts/AgeoTrialMedium.ttf') format('truetype');
+  src: url('../data/fonts/Gooper-BoldItalic.woff2') format('woff2'),
+       url('../data/fonts/Gooper-BoldItalic.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gooper-Regular;
-  src: url('../data/fonts/Gooper-Regular.ttf') format('truetype');
+  src: url('../data/fonts/Gooper-Regular.woff2') format('woff2'),
+       url('../data/fonts/Gooper-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 body {
