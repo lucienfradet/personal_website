@@ -1,7 +1,7 @@
 # personal_website
 lucienfradet's personal website and portfolio
 
-### TODO:
+## TODO:
 - [x] Portfolio (lol)
 - [x] About me
 - [x] Contact linked to email
@@ -9,6 +9,20 @@ lucienfradet's personal website and portfolio
 - [ ] Animated Background
 - [ ] Something using Matter.js
 
-### To deploy with docker compose:
+## Uses Server Side Injection (SSI)
+- Set in nginx:
+```
+location / {
+    ssi on;
+    ...
+}
+```
+- Include 'components' in HTML files
+```html
+<!--#include virtual="/components/header.html"-->
+```
+`virtual=` expects absolute path!
+
+## To deploy with docker compose:
 
 sudo docker compose up --build -d
