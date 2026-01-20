@@ -1,96 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Lucien Cusson-Fradet - Site personnel" />
-    <meta property="og:description" content="Portfolio de Lucien Cusson-Fradet, artiste numérique de Montréal" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lucienfradet.com/data/images/site_preview.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <link href="/css/style.css" rel="stylesheet">
+    <!-- #include virtual="/components/head.html" -->
     <link href="/css/project.css" rel="stylesheet">
-    <!-- libraries -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
   </head>
   <body>
-    <div class="navbar">
-      <a class="silent-link" href="/index.html">
-        <div class="navbar-title">Lucien Cusson-Fradet</div>
-      </a>
-      <div class="navbar-icon">
-        <svg></svg>
-      </div>
-      <div class="navbar-desktop-menu-container">
-        <a class="silent-link" href="/pages/about/about.html">
-          <div class="navbar-desktop-menu">A propos</div>
-        </a>
-        <a class="silent-link" href="/pages/project/project.html">
-          <div class="navbar-desktop-menu">Projets</div>
-        </a>
-        <a class="silent-link" href="/pages/contact/contact.html">
-          <div class="navbar-desktop-menu">Contact</div>
-        </a>
-        <div class="dark-mode-toggle desktop">
-          <button id="darkModeToggleDesktop" class="dark-mode-button" aria-label="Toggle dark mode">
-            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="navbar-content">
-        <a class="silent-link" href="/pages/about/about.html">
-          <button class="button-default">A propos</button>
-        </a>
-        <a class="silent-link" href="/pages/project/project.html">
-          <button class="button-default">Projets</button>
-        </a>
-        <a class="silent-link" href="/pages/contact/contact.html">
-          <button class="button-default">Contact</button>
-        </a>
-
-        <div class="dark-mode-toggle mobile">
-          <button id="darkModeToggleMobile" class="dark-mode-button" aria-label="Toggle dark mode">
-            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-          </button>
-        </div>
-
-        <div class="social-container mobile">
-          <a href="mailto:contact@lucienfradet.com"><img src="/data/icons/email.svg" alt="Email Icon"></a>
-          <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="/data/icons/instagram.svg" alt="Instagram Icon"></a>
-          <a href="https://github.com/lucienfradet/"><img src="/data/icons/github_icon.svg" alt="Github icon"></a>
-        </div>
-      </div>
-    </div>
-
+    <!-- #include virtual="/components/header.html" -->
 
     <div class="project-container multiple">
 
@@ -175,14 +90,7 @@
         </a>
       </div>
 
-      <div class="footer-wrapper">
-        <div class="buttom-social">
-          <a href="mailto:contact@lucienfradet.com"><img src="/data/icons/email.svg" alt="Email Icon"></a>
-          <a href="https://www.instagram.com/lucienfradet?igsh=MTJqbjIzOXFzdHIwaw=="><img src="/data/icons/instagram.svg" alt="Instagram Icon"></a>
-          <a href="https://github.com/lucienfradet/"><img src="/data/icons/github_icon.svg" alt="Github icon"></a>
-        </div>
-        <div class="text-centered number-text" id="copyright-text"><span>&copy; 2024 Certains droits réservés - Lucien Cusson-Fradet</span></div>
-      </div>
+      <!-- #include virtual="/components/footer.html" -->
     </footer>
   </body>
 
