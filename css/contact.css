@@ -24,7 +24,7 @@
 
 .contact-wrapper {
     height: 100vh;
-    max-width: 1600px;
+    max-width: 75vw;
     color: #000;
     text-align: center;
     flex-direction: column;
